@@ -39,6 +39,7 @@ public class UserController {
     public String deleteUser(@PathVariable("id") String id) {
         userRepository.deleteById(UUID.fromString(id));
         return "User deleted successfully";
+
     }
 
     @PutMapping("/users/{id}")
